@@ -1,7 +1,7 @@
 {
-  "total": 12,
+  "total": 11,
   "offset": 0,
-  "limit": 12,
+  "limit": 11,
   "data": [
     {
       "name": "Table",
@@ -38,10 +38,6 @@
     {
       "name": "Tabs",
       "path": "/block-collection/tabs"
-    },
-    {
-      "name": "Fragment",
-      "path": "/block-collection/fragment"
     },
     {
       "name": "Search",
