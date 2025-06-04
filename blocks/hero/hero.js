@@ -1,29 +1,20 @@
 export default function decorate(block) {
   const pictureEl = block.querySelector('picture');
+  const textElements = block.querySelectorAll('h1, h2, h3, h4, h5, h6, p, a');
 
-  const heroContainer = document.createElement('div');
-  heroContainer.className = block.className;
-  Array.from(block.attributes).forEach((attr) => {
-    if (!['class'].includes(attr.name)) heroContainer.setAttribute(attr.name, attr.value);
-  });
+  const children = [];
 
   if (pictureEl) {
-    heroContainer.append(pictureEl);
+    children.push(pictureEl);
   } else {
-    heroContainer.classList.add('hero-no-image');
+    block.classList.add('hero-no-image');
   }
 
-  const headingEl = block.querySelectorAll('h1, h2, h3, h4, h5, h6');
-  const paragraphEl = block.querySelectorAll('p');
-
-  if (headingEl || paragraphEl) {
+  if (textElements.length > 0) {
     const textDiv = document.createElement('div');
-
-    headingEl.forEach((heading) => { textDiv.append(heading); });
-    paragraphEl.forEach((paragraph) => { textDiv.append(paragraph); });
-
-    heroContainer.append(textDiv);
+    textDiv.append(...textElements);
+    children.push(textDiv);
   }
 
-  block.replaceWith(heroContainer);
+  block.replaceChildren(...children);
 }
