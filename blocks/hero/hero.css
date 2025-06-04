@@ -22,13 +22,7 @@
   color: var(--background-color);
 }
 
-.hero-no-image h1,
-.hero-no-image h2,
-.hero-no-image h3,
-.hero-no-image h4,
-.hero-no-image h5,
-.hero-no-image h6,
-.hero-no-image p {
+.hero.no-image * {
   color: var(--text-color);
 }
 
