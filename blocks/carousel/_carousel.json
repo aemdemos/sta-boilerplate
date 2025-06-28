@@ -37,34 +37,13 @@
       "id": "carousel",
       "fields": [
           {
-            "component": "multiselect",
+            "component": "text",
             "name": "classes",
-            "label": "Style class",
-            "options": [
-              {
-                "name": "cards",
-                "value": "cards"
-              },
-              {
-                "name": "full-width",
-                "value": "full-width"
-              },
-              {
-                "name": "one",
-                "value": "one image"
-              },
-              {
-                "name": "two",
-                "value": "two images"
-              },
-              {
-                "name": "three",
-                "value": "three images"
-              }
-            ]
-          }
+            "label": "Style classes",
+            "multi": true
+            }
         ]
-      },  
+      },
     {
       "id": "carousel-item",
       "fields": [

@@ -29,6 +29,12 @@
           "component": "text",
           "name": "linkText",
           "label": "Text"
+        },
+        {
+          "component": "text",
+          "name": "classes",
+          "label": "Style classes",
+          "multi": true
         }
       ]
     }

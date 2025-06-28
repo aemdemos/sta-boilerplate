@@ -59,6 +59,24 @@ async function loadFonts() {
   }
 }
 
+function decorateSectionData(main) {
+  main.querySelectorAll('.section[data-id], .section[data-image]').forEach((section) => {
+    if (section.hasAttribute('data-id')) {
+      const { id } = section.dataset;
+      section.id = id;
+      section.removeAttribute('data-id');
+    }
+    // this could be extended to allow for a mobile vs. desktop image, etc.
+    if (section.hasAttribute('data-image')) {
+      const image = section.getAttribute('data-image');
+      if (image) {
+        section.style.backgroundImage = `url('${image}')`;
+        section.removeAttribute('data-image');
+      }
+    }
+  });
+}
+
 /**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
@@ -85,6 +103,7 @@ export function decorateMain(main) {
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
+  decorateSectionData(main);
 }
 
 /**
