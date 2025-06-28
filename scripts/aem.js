@@ -453,7 +453,8 @@ function decorateIcon(span, prefix = '', alt = '') {
   const img = document.createElement('img');
   img.dataset.iconName = iconName;
   img.src = `${window.hlx.codeBasePath}${prefix}/icons/${iconName}.svg`;
-  img.alt = alt;
+  // use alt text if provided, otherwise use icon name for accessibility
+  img.alt = alt ? `${alt} ${iconName}` : iconName;
   img.loading = 'lazy';
   img.width = 16;
   img.height = 16;
