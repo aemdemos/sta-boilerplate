@@ -2,6 +2,8 @@
 Definitions > existing model(s): carousel
 Models > I added classes field to a new "carousel" model.
 "carousel-item" model is unchanged.
+- can't have classes_style and classes_slideimages in the same model.
+
 */
 
 .carousel .carousel-slides-container {
