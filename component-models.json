@@ -183,8 +183,8 @@
     "id": "carousel",
     "fields": [
       {
-        "component": "select",
-        "name": "classes_style",
+        "component": "multiselect",
+        "name": "classes",
         "label": "Style class",
         "options": [
           {
@@ -194,25 +194,18 @@
           {
             "name": "full-width",
             "value": "full-width"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "classes_slideimages",
-        "label": "Images per slide",
-        "options": [
+          },
           {
             "name": "one",
-            "value": "one"
+            "value": "one image"
           },
           {
             "name": "two",
-            "value": "two"
+            "value": "two images"
           },
           {
             "name": "three",
-            "value": "three"
+            "value": "three images"
           }
         ]
       }
