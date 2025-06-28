@@ -20,17 +20,6 @@
     {
       "id": "hero",
       "fields": [
-          {
-            "component": "text",
-            "name": "classes",
-            "label": "Style classes",
-            "multi": true
-            }
-        ]
-      },
-    {
-      "id": "hero",
-      "fields": [
         {
           "component": "reference",
           "valueType": "string",
@@ -51,7 +40,13 @@
           "value": "",
           "label": "Text",
           "valueType": "string"
-        }
+        },
+        {
+          "component": "text",
+          "name": "classes",
+          "label": "Style classes",
+          "multi": true
+          }
       ]
     }
   ],

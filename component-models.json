@@ -178,6 +178,17 @@
     ]
   },
   {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Style classes",
+        "multi": true
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -291,17 +302,6 @@
     "id": "hero",
     "fields": [
       {
-        "component": "text",
-        "name": "classes",
-        "label": "Style classes",
-        "multi": true
-      }
-    ]
-  },
-  {
-    "id": "hero",
-    "fields": [
-      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
@@ -321,6 +321,12 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Style classes",
+        "multi": true
       }
     ]
   },
