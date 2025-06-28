@@ -123,15 +123,15 @@
     "id": "section",
     "fields": [
       {
+        "component": "text",
+        "name": "name",
+        "label": "Section Name",
+        "description": "The label shown for this section in the Content Tree"
+      },
+      {
         "component": "tab",
         "label": "Content configs",
         "name": "tab1"
-      },
-      {
-        "component": "text",
-        "name": "name1",
-        "label": "Section Name",
-        "description": "The label shown for this section in the Content Tree"
       },
       {
         "component": "text",
