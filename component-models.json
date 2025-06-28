@@ -138,12 +138,6 @@
             "value": "highlight"
           }
         ]
-      },
-      {
-        "component": "text",
-        "name": "id",
-        "label": "ID",
-        "description": "Adds an #id to link to"
       }
     ]
   },
