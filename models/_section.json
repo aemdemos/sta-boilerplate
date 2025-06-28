@@ -34,7 +34,7 @@
           "component": "text",
           "name": "id1",
           "label": "ID",
-          "description": "Adds an #id to link to"
+          "description": "Adds an HTML ID to the section"
         },
         {
           "component": "tab",
