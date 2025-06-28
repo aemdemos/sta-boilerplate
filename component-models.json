@@ -142,6 +142,17 @@
     ]
   },
   {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Style class",
+        "multi": true
+      }
+    ]
+  },
+  {
     "id": "accordion-item",
     "fields": [
       {
