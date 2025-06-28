@@ -34,6 +34,47 @@
   ],
   "models": [
     {
+      "id": "carousel",
+      "fields": [
+          {
+            "component": "multiselect",
+            "valueType": "string",
+            "name": "classes_style",
+            "label": "Style class",
+            "options": [
+              {
+                "name": "cards",
+                "value": "cards"
+              },
+              {
+                "name": "full-width",
+                "value": "full-width"
+              }
+            ]
+          },
+          {
+            "component": "multiselect",
+            "valueType": "string",
+            "name": "classes_slideimages",
+            "label": "Images per slide",
+            "options": [
+              {
+                "name": "one",
+                "value": "one"
+              },
+              {
+                "name": "two",
+                "value": "two"
+              },
+              {
+                "name": "three",
+                "value": "three"
+              }
+            ]
+          }
+        ]
+      },  
+    {
       "id": "carousel-item",
       "fields": [
         {

@@ -1,3 +1,9 @@
+/* notes:
+Definitions > existing model(s): carousel
+Models > I added classes field to a new "carousel" model.
+"carousel-item" model is unchanged.
+*/
+
 .carousel .carousel-slides-container {
   position: relative;
 }
