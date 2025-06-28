@@ -123,14 +123,30 @@
     "id": "section",
     "fields": [
       {
+        "component": "tab",
+        "label": "Content configs",
+        "name": "tab1"
+      },
+      {
         "component": "text",
-        "name": "name",
+        "name": "name1",
         "label": "Section Name",
         "description": "The label shown for this section in the Content Tree"
       },
       {
+        "component": "text",
+        "name": "id1",
+        "label": "ID",
+        "description": "Adds an #id to link to"
+      },
+      {
+        "component": "tab",
+        "label": "Style configs",
+        "name": "tab2"
+      },
+      {
         "component": "multiselect",
-        "name": "style",
+        "name": "style2",
         "label": "Style",
         "options": [
           {
@@ -142,15 +158,9 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "background",
-        "label": "Image",
+        "name": "background-image2",
+        "label": "Background image",
         "multi": false
-      },
-      {
-        "component": "text",
-        "name": "id",
-        "label": "ID",
-        "description": "Adds an #id to link to"
       }
     ]
   },
