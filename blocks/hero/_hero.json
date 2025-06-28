@@ -40,7 +40,13 @@
           "value": "",
           "label": "Text",
           "valueType": "string"
-        }
+        },
+        {
+          "component": "text",
+          "name": "classes",
+          "label": "Style classes",
+          "multi": true
+          }
       ]
     }
   ],

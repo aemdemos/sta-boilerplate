@@ -41,7 +41,7 @@
           {
             "component": "text",
             "name": "classes",
-            "label": "Style class",
+            "label": "Style classes",
             "multi": true
             }
         ]

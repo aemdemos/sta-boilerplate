@@ -1,12 +1,3 @@
-/* notes:
-Definitions > existing model(s): carousel
-Models > I added classes field to a new "carousel" model.
-"carousel-item" model is unchanged.
-- can't have classes_style and classes_slideimages in the same model.
-- can't have valueType of string for more than 1 class, it combines them into a single string.
-- use multiselect for classes field with intuitive labels for easiest parity with doc-based styles.
-*/
-
 .carousel .carousel-slides-container {
   position: relative;
 }

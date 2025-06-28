@@ -138,6 +138,12 @@
             "value": "highlight"
           }
         ]
+      },
+      {
+        "component": "text",
+        "name": "id",
+        "label": "ID",
+        "description": "Adds an #id to link to"
       }
     ]
   },
@@ -147,7 +153,7 @@
       {
         "component": "text",
         "name": "classes",
-        "label": "Style class",
+        "label": "Style classes",
         "multi": true
       }
     ]
@@ -168,6 +174,17 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Style classes",
+        "multi": true
       }
     ]
   },
@@ -194,31 +211,10 @@
     "id": "carousel",
     "fields": [
       {
-        "component": "multiselect",
+        "component": "text",
         "name": "classes",
-        "label": "Style class",
-        "options": [
-          {
-            "name": "cards",
-            "value": "cards"
-          },
-          {
-            "name": "full-width",
-            "value": "full-width"
-          },
-          {
-            "name": "one",
-            "value": "one image"
-          },
-          {
-            "name": "two",
-            "value": "two images"
-          },
-          {
-            "name": "three",
-            "value": "three images"
-          }
-        ]
+        "label": "Style classes",
+        "multi": true
       }
     ]
   },
@@ -325,6 +321,12 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Style classes",
+        "multi": true
       }
     ]
   },
@@ -340,6 +342,12 @@
         "component": "text",
         "name": "linkText",
         "label": "Text"
+      },
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Style classes",
+        "multi": true
       }
     ]
   },
@@ -359,6 +367,12 @@
         "value": "",
         "label": "Attribution",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Style classes",
+        "multi": true
       }
     ]
   },
@@ -533,6 +547,17 @@
         "valueType": "string",
         "name": "column4text",
         "label": "Column4"
+      }
+    ]
+  },
+  {
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Style classes",
+        "multi": true
       }
     ]
   },

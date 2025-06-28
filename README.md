@@ -40,3 +40,19 @@ npm run lint
 1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
 1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
 1. Open the `{repo}` directory in your favorite IDE and start coding :)
+
+### Extra functions added
+1. decorateSectionData in scripts.js
+1. added alt text to icons in aem.js to pass accessibility
+
+## Universal Editor with Edge Delivery (Crosswalk)
+This repo comes with more components than the regular boilerplate, all ready for UE.
+
+### UE component notes for adding styles
+Definitions > model was defined for most components
+
+Models > new "classes" option added to most for the block itself, not block-items.
+
+For parity with how Edge Del. Svc. block styles are authored, I used "text" with "multi"=true for classes field to type in multiple classes.
+- See table.json and video.json for examples of multiselect with child style options.
+- You can also use 1 "multiselect" for classes field (with intuitive labels) to allow choosing multiple that you've pre-defined.
