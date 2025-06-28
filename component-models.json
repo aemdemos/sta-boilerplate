@@ -138,6 +138,12 @@
             "value": "highlight"
           }
         ]
+      },
+      {
+        "component": "text",
+        "name": "id",
+        "label": "ID",
+        "description": "Adds an #id to link to"
       }
     ]
   },
@@ -349,17 +355,6 @@
     "id": "quote",
     "fields": [
       {
-        "id": "quote",
-        "fields": [
-          {
-            "component": "text",
-            "name": "classes",
-            "label": "Style classes",
-            "multi": true
-          }
-        ]
-      },
-      {
         "component": "richtext",
         "valueType": "string",
         "name": "quotation",
@@ -372,6 +367,12 @@
         "value": "",
         "label": "Attribution",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Style classes",
+        "multi": true
       }
     ]
   },
