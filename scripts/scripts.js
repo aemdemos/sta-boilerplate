@@ -60,18 +60,18 @@ async function loadFonts() {
 }
 
 function decorateSectionData(main) {
-  main.querySelectorAll('.section[data-id], .section[data-image]').forEach((section) => {
+  main.querySelectorAll('.section[data-id], .section[data-background-image2]').forEach((section) => {
     if (section.hasAttribute('data-id')) {
       const { id } = section.dataset;
       section.id = id;
       section.removeAttribute('data-id');
     }
     // this could be extended to allow for a mobile vs. desktop image, etc.
-    if (section.hasAttribute('data-image')) {
-      const image = section.getAttribute('data-image');
+    if (section.hasAttribute('data-background-image2')) {
+      const image = section.getAttribute('data-background-image2');
       if (image) {
         section.style.backgroundImage = `url('${image}')`;
-        section.removeAttribute('data-image');
+        section.removeAttribute('data-background-image2');
       }
     }
   });
