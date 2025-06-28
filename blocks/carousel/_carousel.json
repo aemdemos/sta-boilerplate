@@ -37,8 +37,7 @@
       "id": "carousel",
       "fields": [
           {
-            "component": "multiselect",
-            "valueType": "string",
+            "component": "select",
             "name": "classes_style",
             "label": "Style class",
             "options": [
@@ -53,8 +52,7 @@
             ]
           },
           {
-            "component": "multiselect",
-            "valueType": "string",
+            "component": "select",
             "name": "classes_slideimages",
             "label": "Images per slide",
             "options": [
