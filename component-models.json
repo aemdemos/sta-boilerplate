@@ -140,6 +140,13 @@
         ]
       },
       {
+        "component": "reference",
+        "valueType": "string",
+        "name": "background",
+        "label": "Image",
+        "multi": false
+      },
+      {
         "component": "text",
         "name": "id",
         "label": "ID",
