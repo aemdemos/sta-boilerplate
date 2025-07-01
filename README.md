@@ -56,3 +56,10 @@ Models > new "classes" option added to most for the block itself, not block-item
 For parity with how Edge Del. Svc. block styles are authored, I used "text" with "multi"=true for classes field to type in multiple classes.
 - See table.json and video.json for examples of multiselect with child style options.
 - You can also use 1 "multiselect" for classes field (with intuitive labels) to allow choosing multiple that you've pre-defined.
+
+## paths.json
+You have to add all json files you want to access publicly in mappings. Can add a new included path to experience fragments, then map it to be available via /fragments.
+"mappings": [ "/content/experience-fragments/yourproject/:/fragments/" ],
+"includes": [ "/content/experience-fragments/yourproject/"]
+
+To publish icons, pdfs, or videos, you need to add cloud config per https://www.aem.live/docs/universal-editor-assets.
