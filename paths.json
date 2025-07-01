@@ -3,9 +3,10 @@
     "/content/sta-boilerplate/:/",
     "/content/sta-boilerplate/configuration:/.helix/config.json",
     "/content/sta-boilerplate/metadata:/metadata.json",
-    "/content/dam/sta-boilerplate/icons:/icons"
+    "/content/dam/sta-boilerplate/icons/:/icons/"
   ],
   "includes": [
-    "/content/sta-boilerplate/"
+    "/content/sta-boilerplate/",
+    "/content/dam/sta-boilerplate/"
   ]
 }
