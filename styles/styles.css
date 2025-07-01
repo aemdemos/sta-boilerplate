@@ -54,6 +54,10 @@
   src: local('Arial');
 }
 
+/* Use 600, 900, 1200 and maybe 1800px. Don't use customer breakpoints per
+ https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ 
+ */
+
 @media (width >= 900px) {
   :root {
     /* body sizes */
