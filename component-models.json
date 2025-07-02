@@ -402,21 +402,9 @@
       },
       {
         "component": "aem-tag",
-        "label": "Prices Tag Picker",
-        "name": "cq:tags_prices",
-        "valueType": "string",
-        "validation": {
-          "rootPath": "/content/cq:tags/prices"
-        }
-      },
-      {
-        "component": "aem-tag",
-        "label": "Default Tag Picker",
-        "name": "cq:tags_default",
-        "valueType": "string",
-        "validation": {
-          "rootPath": "/content/cq:tags/default"
-        }
+        "label": "AEM Tag Picker",
+        "name": "cq:tags",
+        "valueType": "string"
       }
     ]
   },
