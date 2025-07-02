@@ -62,4 +62,4 @@ You have to add all json files you want to access publicly in mappings. Can add 
 "mappings": [ "/content/experience-fragments/yourproject/:/fragments/" ],
 "includes": [ "/content/experience-fragments/yourproject/"]
 
-To publish icons, pdfs, or videos, you need to add cloud config per https://www.aem.live/docs/universal-editor-assets. Then add /content/dam/yourproject/ in "includes", and mapping to /icons/. BUT I could not get icons to be properly published unless they were added via the image picker onto a page an published first.
+To publish icons, pdfs, or videos, you need to add cloud config per https://www.aem.live/docs/universal-editor-assets. Then add /content/dam/yourproject/ in "includes", and mapping to /icons/. 
