@@ -315,7 +315,7 @@ function createOptimizedPicture(
     source.setAttribute('srcset', `${origin}${pathname}?width=${br.width}&format=webply&optimize=medium`);
     picture.appendChild(source);
   });
-  
+
   // fallback
   breakpoints.forEach((br, i) => {
     if (i < breakpoints.length - 1) {
