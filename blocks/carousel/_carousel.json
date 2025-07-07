@@ -34,8 +34,25 @@
   ],
   "models": [
     {
+      "id": "carousel",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "classes",
+          "label": "Style"
+        }
+      ]
+    },
+    {
       "id": "carousel-item",
       "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "classes",
+          "label": "Style"
+        },
         {
           "component": "reference",
           "valueType": "string",
@@ -63,7 +80,9 @@
   "filters": [
     {
       "id": "carousel",
-      "components": ["carousel-item"]
+      "components": [
+        "carousel-item"
+      ]
     }
   ]
 }

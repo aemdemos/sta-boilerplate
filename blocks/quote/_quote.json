@@ -21,6 +21,12 @@
       "id": "quote",
       "fields": [
         {
+          "component": "text",
+          "valueType": "string",
+          "name": "classes",
+          "label": "Style"
+        },
+        {
           "component": "richtext",
           "valueType": "string",
           "name": "quotation",
