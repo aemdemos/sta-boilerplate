@@ -21,6 +21,12 @@
       "id": "fragment",
       "fields": [
         {
+          "component": "text",
+          "valueType": "string",
+          "name": "classes",
+          "label": "Style"
+        },
+        {
           "component": "aem-content",
           "name": "reference",
           "label": "Reference"
