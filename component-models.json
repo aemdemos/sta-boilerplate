@@ -341,9 +341,36 @@
       },
       {
         "component": "text",
-        "name": "classes",
-        "label": "Style classes",
+        "name": "manual_classes",
+        "label": "Style classes manual",
         "multi": true
+      },
+      {
+        "component": "multiselect",
+        "name": "select_classes",
+        "label": "Style classes",
+        "options": [
+          {
+            "name": "Width 25%",
+            "value": "width-25"
+          },
+          {
+            "name": "Width 33%",
+            "value": "width-33"
+          },
+          {
+            "name": "Width 50%",
+            "value": "width-50"
+          },
+          {
+            "name": "Width 66%",
+            "value": "width-66"
+          },
+          {
+            "name": "Width 75%",
+            "value": "width-75"
+          }
+        ]
       }
     ]
   },
