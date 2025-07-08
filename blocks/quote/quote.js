@@ -1,3 +1,4 @@
+// also see https://www.aem.live/developer/universal-editor-blocks
 export default async function decorate(block) {
   const [quotation, attribution] = [...block.children].map((c) => c.firstElementChild);
   const blockquote = document.createElement('blockquote');

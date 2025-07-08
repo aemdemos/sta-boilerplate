@@ -51,7 +51,7 @@ This repo comes with more components than the regular boilerplate, all ready for
 ### UE component notes for adding styles
 Definitions > model was defined for most components
 
-Models > new "classes" option added to most for the block itself, not block-items.
+Models > new "classes" option added to most for the block itself, not block-items. See https://www.aem.live/developer/universal-editor-blocks#block-options
 
 For parity with how Edge Del. Svc. block styles are authored, I used "text" with "multi"=true for classes field to type in multiple classes.
 - See table.json and video.json for examples of multiselect with child style options.
