@@ -43,14 +43,15 @@
         },
         {
           "component": "text",
-          "name": "manual_classes",
+          "name": "classes",
           "label": "Style classes manual",
           "multi": true
           },
           {
             "component": "multiselect",
-            "name": "select_classes",
-            "label": "Style classes",
+            "name": "classes",
+            "label": "Style classes select",
+            "multi": false,
             "options": [
               {
                 "name": "Width 25%",
