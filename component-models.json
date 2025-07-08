@@ -342,36 +342,8 @@
       {
         "component": "text",
         "name": "classes",
-        "label": "Style classes manual",
+        "label": "Style classes",
         "multi": true
-      },
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Style classes select",
-        "multi": false,
-        "options": [
-          {
-            "name": "Width 25%",
-            "value": "width-25"
-          },
-          {
-            "name": "Width 33%",
-            "value": "width-33"
-          },
-          {
-            "name": "Width 50%",
-            "value": "width-50"
-          },
-          {
-            "name": "Width 66%",
-            "value": "width-66"
-          },
-          {
-            "name": "Width 75%",
-            "value": "width-75"
-          }
-        ]
       }
     ]
   },
