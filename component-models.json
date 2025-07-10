@@ -158,21 +158,14 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "background-image_mobile",
-        "label": "Background image (mobile)",
+        "name": "background-image2",
+        "label": "Background image",
         "multi": false
       },
       {
         "component": "reference",
         "valueType": "string",
-        "name": "background-image_tablet",
-        "label": "Background image (tablet)",
-        "multi": false
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "background-image_desktop",
+        "name": "background-image3",
         "label": "Background image (desktop)",
         "multi": false
       }
