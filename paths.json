@@ -4,6 +4,7 @@
     "/content/sta-boilerplate/configuration:/.helix/config.json",
     "/content/sta-boilerplate/metadata:/metadata.json",
     "/content/sta-boilerplate/taxonomy:/taxonomy.json",
+    "/content/sta-boilerplate/library/blocks:/library/blocks.json",
     "/content/dam/sta-boilerplate/icons/:/icons/"
   ],
   "includes": [
