@@ -55,8 +55,22 @@
         {
           "component": "reference",
           "valueType": "string",
-          "name": "background-image2",
-          "label": "Background image",
+          "name": "background-image_mobile",
+          "label": "Background image (mobile)",
+          "multi": false
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "background-image_tablet",
+          "label": "Background image (tablet)",
+          "multi": false
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "background-image_desktop",
+          "label": "Background image (desktop)",
           "multi": false
         }
       ]
