@@ -165,6 +165,13 @@
       {
         "component": "reference",
         "valueType": "string",
+        "name": "background-image2_tablet",
+        "label": "Background image (tablet)",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
         "name": "background-image3",
         "label": "Background image (desktop)",
         "multi": false
