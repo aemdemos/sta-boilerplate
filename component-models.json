@@ -137,28 +137,28 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "background_mobile",
+        "name": "backgroundMobile",
         "label": "Image - Mobile",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "background_mobileAlt",
+        "name": "backgroundMobileAlt",
         "label": "Alt text for image",
         "value": ""
       },
       {
         "component": "reference",
         "valueType": "string",
-        "name": "background_tablet",
+        "name": "backgroundTablet",
         "label": "Image - Tablet",
         "multi": false
       },
       {
         "component": "reference",
         "valueType": "string",
-        "name": "background_desktop",
+        "name": "backgroundDesktop",
         "label": "Image - Desktop",
         "multi": false
       },
