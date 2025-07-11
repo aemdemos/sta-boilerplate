@@ -63,3 +63,9 @@ You have to add all json files you want to access publicly in mappings. Can add 
 "includes": [ "/content/experience-fragments/yourproject/"]
 
 To publish icons, pdfs, or videos, you need to add cloud config per https://www.aem.live/docs/universal-editor-assets. Then add /content/dam/yourproject/ in "includes", and mapping to /icons/. 
+
+## A note about Section metadata with images
+1. you can't use underscores in the key name, it won't be appended as "data-". In traditional EDS, underscores are rewritten as dashes. But in UE, underscores are reserved for Element Grouping (https://www.aem.live/developer/component-model-definitions#element-grouping).
+1. you can't choose more than 1 reference (image) with the same key, only the 1st one will be appended to "data-"
+1. if you want to allow an author to choose 3 separate images for a background (mobile, tablet, desktop), it seems you have to have 3 references fields. This eats into the linter's "max of 4 cells" allowance, but you can't use element grouping (underscores) for Sections due to point 1.
+1. 
