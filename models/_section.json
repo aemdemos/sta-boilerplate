@@ -26,6 +26,12 @@
           "description": "The label shown for this section in the Content Tree"
         },
         {
+          "component": "text",
+          "name": "lunch",
+          "label": "lunch",
+          "description": "lunch"
+        },
+        {
           "component": "tab",
           "label": "Content configs",
           "name": "tab1"
@@ -56,8 +62,22 @@
           "component": "reference",
           "valueType": "string",
           "name": "background-image2",
-          "label": "Choose mobile, tablet and desktop background images",
-          "multi": true
+          "label": "background image",
+          "multi": false
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "another-image",
+          "label": "another image",
+          "multi": false
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "backgroundDesktop",
+          "label": "desk",
+          "multi": false
         }
       ]
     }
