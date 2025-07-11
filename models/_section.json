@@ -23,61 +23,84 @@
           "component": "text",
           "name": "name",
           "label": "Section Name",
-          "description": "The label shown for this section in the Content Tree"
+          "description": "O rótulo mostrado para esta seção na Árvore de Conteúdo"
         },
         {
           "component": "text",
-          "name": "lunch",
-          "label": "lunch",
-          "description": "lunch"
-        },
-        {
-          "component": "tab",
-          "label": "Content configs",
-          "name": "tab1"
-        },
-        {
-          "component": "text",
-          "name": "id1",
+          "name": "id",
           "label": "ID",
-          "description": "Adds an HTML ID to the section"
+          "description": "Adiciona um ID à seção"
         },
         {
-          "component": "tab",
-          "label": "Style configs",
-          "name": "tab2"
+          "component": "reference",
+          "valueType": "string",
+          "name": "image-mobile",
+          "label": "Image - Mobile",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "image-mobileAlt",
+          "label": "Alt text for image",
+          "value": ""
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image-tablet",
+          "label": "Image - Tablet",
+          "multi": false
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image-desktop",
+          "label": "Image - Desktop",
+          "multi": false
         },
         {
           "component": "multiselect",
-          "name": "style2",
+          "name": "style",
           "label": "Style",
           "options": [
             {
-              "name": "Highlight",
-              "value": "highlight"
+              "name": "cor primaria",
+              "value": "cor-global-primaria"
+            },
+            {
+              "name": "cor secundaria",
+              "value": "cor-global-secundaria"
+            },
+            {
+              "name": "cor azul petroleo 80",
+              "value": "cor-global-azul-petroleo-80"
+            },
+            {
+              "name": "cor acento",
+              "value": "cor-global-acento"
+            },
+            {
+              "name": "cor branco",
+              "value": "cor-global-branco"
+            },
+            {
+              "name": "cor preto",
+              "value": "cor-global-preto"
+            },
+            {
+              "name": "cor azul 20",
+              "value": "cor-global-azul-20"
+            },
+            {
+              "name": "flex",
+              "value": "flex"
+            },
+            {
+              "name": "larga (wide)",
+              "value": "wide"
             }
           ]
-        },
-        {
-          "component": "reference",
-          "valueType": "string",
-          "name": "background-image2",
-          "label": "background image",
-          "multi": false
-        },
-        {
-          "component": "reference",
-          "valueType": "string",
-          "name": "another-image",
-          "label": "another image",
-          "multi": false
-        },
-        {
-          "component": "reference",
-          "valueType": "string",
-          "name": "backgroundDesktop",
-          "label": "desk",
-          "multi": false
         }
       ]
     }
