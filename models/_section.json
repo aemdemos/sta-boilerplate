@@ -34,28 +34,28 @@
         {
           "component": "reference",
           "valueType": "string",
-          "name": "image-mobile",
+          "name": "background_mobile",
           "label": "Image - Mobile",
           "multi": false
         },
         {
           "component": "text",
           "valueType": "string",
-          "name": "image-mobileAlt",
+          "name": "background_mobileAlt",
           "label": "Alt text for image",
           "value": ""
         },
         {
           "component": "reference",
           "valueType": "string",
-          "name": "image-tablet",
+          "name": "background_tablet",
           "label": "Image - Tablet",
           "multi": false
         },
         {
           "component": "reference",
           "valueType": "string",
-          "name": "image-desktop",
+          "name": "background_desktop",
           "label": "Image - Desktop",
           "multi": false
         },
