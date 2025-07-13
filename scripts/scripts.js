@@ -67,11 +67,11 @@ function decorateSectionData(main) {
       section.removeAttribute('data-id');
     }
     // this could be extended to allow for a mobile vs. desktop image, etc.
-    if (section.hasAttribute('data-background-image2')) {
-      const image = section.getAttribute('data-background-image2');
+    if (section.hasAttribute('data-background-image')) {
+      const image = section.getAttribute('data-background-image');
       if (image) {
         section.style.backgroundImage = `url('${image}')`;
-        section.removeAttribute('data-background-image2');
+        section.removeAttribute('data-background-image');
       }
     }
   });
