@@ -60,7 +60,7 @@ async function loadFonts() {
 }
 
 function decorateSectionData(main) {
-  main.querySelectorAll('.section[data-id], .section[data-background-image2]').forEach((section) => {
+  main.querySelectorAll('.section[data-id], .section[data-background-image]').forEach((section) => {
     if (section.hasAttribute('data-id')) {
       const { id } = section.dataset;
       section.id = id;

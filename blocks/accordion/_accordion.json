@@ -38,14 +38,35 @@
     {
       "id": "accordion",
       "fields": [
-          {
-            "component": "text",
-            "name": "classes",
-            "label": "Style classes",
-            "multi": true
+        {
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Style classes",
+          "options": [
+            {
+              "name": "Largura 25%",
+              "value": "width-25"
+            },
+            {
+              "name": "Largura 33%",
+              "value": "width-33"
+            },
+            {
+              "name": "Largura 50%",
+              "value": "width-50"
+            },
+            {
+              "name": "Largura 66%",
+              "value": "width-66"
+            },
+            {
+              "name": "Largura 75%",
+              "value": "width-75"
             }
-        ]
-      },
+          ]
+        }
+      ]
+    },
     {
       "id": "accordion-item",
       "fields": [
