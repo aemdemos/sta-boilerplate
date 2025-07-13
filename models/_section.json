@@ -64,11 +64,63 @@
           ]
         },
         {
+          "component": "select",
+          "valueType": "string",
+          "name": "object-fit",
+          "label": "ajuste de imagem/bg fit",
+          "value": "cobrir/cover",
+          "options": [
+            {
+              "name": "cover",
+              "value": "cobrir/cover"
+            },
+            {
+              "name": "contain",
+              "value": "conter/contain"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "valueType": "string",
+          "name": "object-position",
+          "label": "posição da imagem/bg position",
+          "value": "centro/center",
+          "options": [
+            {
+              "name": "center",
+              "value": "centro/center"
+            },
+            {
+              "name": "top left",
+              "value": "superior esquerda/top left"
+            },
+            {
+              "name": "top right",
+              "value": "superior direita/top right"
+            },
+            {
+              "name": "bottom left",
+              "value": "inferior esquerda/bottom left"
+            },
+            {
+              "name": "bottom right",
+              "value": "inferior direita/bottom right"
+            }
+          ]
+        },
+        {
           "component": "reference",
           "valueType": "string",
           "name": "background-image",
           "label": "Background image",
           "multi": false
+        },
+        {
+          "component": "boolean",
+          "label": "no celular, exiba a imagem atrás do conteúdo em vez de em cima",
+          "name": "mobile-image-behind",
+          "valueType": "boolean"
         }
       ]
     }
