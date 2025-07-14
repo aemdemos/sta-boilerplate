@@ -465,13 +465,13 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "Title",
+        "name": "library_title",
         "label": "Library Title"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "Description",
+        "name": "library_description",
         "label": "Library Description"
       }
     ]
