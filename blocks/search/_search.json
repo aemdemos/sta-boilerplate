@@ -24,12 +24,6 @@
         {
           "component": "text",
           "valueType": "string",
-          "name": "classes",
-          "label": "Style"
-        },
-        {
-          "component": "text",
-          "valueType": "string",
           "name": "index",
           "label": "Index"
         },
