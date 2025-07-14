@@ -4,6 +4,11 @@
     "fields": [
       {
         "component": "text",
+        "name": "template",
+        "label": "Page template name"
+      },
+      {
+        "component": "text",
         "valueType": "string",
         "name": "jcr:title",
         "label": "Title"
@@ -11,15 +16,26 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "jcr:description",
-        "label": "Description"
+        "name": "pageTitle",
+        "label": "Page Title"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "keywords",
-        "multi": true,
-        "label": "Keywords"
+        "name": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jcr:description",
+        "label": "Discription"
+      },
+      {
+        "component": "aem-tag",
+        "label": "AEM Tag Picker",
+        "name": "cq:tags",
+        "valueType": "string"
       }
     ]
   },
@@ -444,6 +460,23 @@
     ]
   },
   {
+    "id": "library-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "libraryTitle",
+        "label": "Library Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "libraryDescription",
+        "label": "Library Description"
+      }
+    ]
+  },
+  {
     "id": "modal",
     "fields": [
       {
@@ -461,46 +494,6 @@
         "name": "classes",
         "label": "Style classes",
         "multi": true
-      }
-    ]
-  },
-  {
-    "id": "page-metadata",
-    "fields": [
-      {
-        "component": "text",
-        "name": "template",
-        "label": "Page template name"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:title",
-        "label": "Title"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "pageTitle",
-        "label": "Page Title"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "subtitle",
-        "label": "Subtitle"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:description",
-        "label": "Discription"
-      },
-      {
-        "component": "aem-tag",
-        "label": "AEM Tag Picker",
-        "name": "cq:tags",
-        "valueType": "string"
       }
     ]
   },
