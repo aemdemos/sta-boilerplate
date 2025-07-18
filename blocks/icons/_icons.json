@@ -25,9 +25,7 @@
               "resourceType": "core/franklin/components/block/v1/block/item",
               "template": {
                 "name": "Icon",
-                "model": "icon",
-                "gridIcon_icon": ":wedge:",
-                "gridIcon_description": "Placeholder Description"
+                "model": "icon"
               }
             }
           }
