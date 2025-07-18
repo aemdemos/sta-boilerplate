@@ -59,15 +59,13 @@
       "text",
       "image",
       "button",
-      "title",
-      "icon"
+      "title"
     ]
   },
   {
     "id": "icons",
     "components": [
-      "icon",
-      "text"
+      "icon"
     ]
   },
   {

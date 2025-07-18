@@ -504,6 +504,13 @@
         "label": "Description",
         "valueType": "string",
         "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "gridIcon_other",
+        "value": "",
+        "label": "Other",
+        "valueType": "string"
       }
     ]
   },
