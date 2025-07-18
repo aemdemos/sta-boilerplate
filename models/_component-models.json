@@ -12,6 +12,9 @@
     "...": "./_text.json#/models"
   },
   {
+    "...": "./_icon.json#/models"
+  },
+  {
     "...": "./_button.json#/models"
   },
   {
