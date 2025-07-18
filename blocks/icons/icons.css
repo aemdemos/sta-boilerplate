@@ -1,13 +1,22 @@
-.block.icons {
-    grid-template-columns: 1fr;
-  }
+.block.icons .icon-item:has(p > span > img) {
+  display: grid;
+  grid-template-areas:
+    "icons content";
+  grid-template-columns: 16px 1fr;
+  gap: 10px;
+  align-items: center;
+}
 
-  .block.icons .icon-item > div {
-    display: flex;
-    column-gap: 10px;
-  }
+.icon-item > .ib-icon {
+  grid-area: icons;
+  margin-bottom: 0;
+}
 
-  .block.icon .ib-icon span {
-    width: 36px;
-    height: 36px;
-  }
+.ib-icon .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-item > *:not(.ib-icon) {
+  grid-area: content;
+}
