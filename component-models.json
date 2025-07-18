@@ -106,8 +106,8 @@
       },
       {
         "component": "select",
-        "name": "titleType",
-        "label": "Title Type",
+        "name": "iconType",
+        "label": "Icon Type",
         "options": [
           {
             "name": ":search:",

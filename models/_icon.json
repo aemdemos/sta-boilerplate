@@ -1,8 +1,8 @@
 {
   "definitions": [
     {
-      "title": "Title",
-      "id": "title",
+      "title": "Icon",
+      "id": "icon",
       "plugins": {
         "xwalk": {
           "page": {
@@ -26,8 +26,8 @@
         },
         {
           "component": "select",
-          "name": "titleType",
-          "label": "Title Type",
+          "name": "iconType",
+          "label": "Icon Type",
           "options": [
             {
               "name": ":search:",
