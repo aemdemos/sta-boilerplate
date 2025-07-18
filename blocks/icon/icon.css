@@ -1,1 +1,8 @@
-/* css */
+.block.icon-block {
+    grid-template-columns: 1fr;
+  }
+
+  .block.icon .ib-icon span {
+    width: 40px;
+    height: 40px;
+  }
