@@ -10,7 +10,7 @@
     "components": [
       "text",
       "image",
-      "icon",
+      "icons",
       "button",
       "title",
       "hero",
