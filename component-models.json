@@ -474,12 +474,6 @@
     "id": "icon",
     "fields": [
       {
-        "component": "text",
-        "name": "classes",
-        "valueType": "string",
-        "hidden": true
-      },
-      {
         "component": "select",
         "name": "gridIcon_icon",
         "value": "",
