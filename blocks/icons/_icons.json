@@ -25,9 +25,7 @@
               "resourceType": "core/franklin/components/block/v1/block/item",
               "template": {
                 "name": "Icon",
-                "model": "icon",
-                "gridIcon_icon": ":wedge:",
-                "gridIcon_description": "Placeholder Description"
+                "model": "icon"
               }
             }
           }
@@ -49,12 +47,6 @@
       {
         "id": "icon",
         "fields": [
-        {
-            "component": "text",
-            "name": "classes",
-            "valueType": "string",
-            "hidden": true
-        },
         {
             "component": "select",
             "name": "gridIcon_icon",
