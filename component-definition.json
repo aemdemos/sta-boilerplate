@@ -265,8 +265,7 @@
                   "name": "Icon",
                   "model": "icon",
                   "gridIcon_icon": ":wedge:",
-                  "gridIcon_description": "Placeholder Description",
-                  "classes": "icon-layout"
+                  "gridIcon_description": "Placeholder Description"
                 }
               }
             }
