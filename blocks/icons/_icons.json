@@ -47,6 +47,13 @@
       {
         "id": "icon",
         "fields": [
+          {
+            "component": "richtext",
+            "name": "gridIcon_other",
+            "value": "",
+            "label": "Title or other text",
+            "valueType": "string"
+          },
         {
             "component": "select",
             "name": "gridIcon_icon",
@@ -73,18 +80,11 @@
             ]
         },
         {
-            "component": "text",
+            "component": "richtext",
             "name": "gridIcon_description",
-            "label": "Description",
+            "label": "Icon text",
             "valueType": "string",
             "multi": false
-            },
-            {
-              "component": "richtext",
-              "name": "gridIcon_other",
-              "value": "",
-              "label": "Other",
-              "valueType": "string"
             }
         ]
       }
