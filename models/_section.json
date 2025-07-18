@@ -130,8 +130,8 @@
       "id": "section",
       "components": [
         "text",
-        "icon",
         "image",
+        "icon",
         "button",
         "title",
         "hero",

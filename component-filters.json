@@ -9,8 +9,8 @@
     "id": "section",
     "components": [
       "text",
-      "icon",
       "image",
+      "icon",
       "button",
       "title",
       "hero",
@@ -59,7 +59,14 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "icon"
+    ]
+  },
+  {
+    "id": "icons",
+    "components": [
+      "icon"
     ]
   },
   {

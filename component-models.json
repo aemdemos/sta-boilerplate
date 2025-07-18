@@ -97,47 +97,6 @@
     ]
   },
   {
-    "id": "icon",
-    "fields": [
-      {
-        "component": "text",
-        "name": "icon",
-        "label": "Icon"
-      },
-      {
-        "component": "select",
-        "name": "iconType",
-        "label": "Icon Type",
-        "options": [
-          {
-            "name": ":search:",
-            "value": "search1"
-          },
-          {
-            "name": "search",
-            "value": "search2"
-          },
-          {
-            "name": "h3",
-            "value": "h3"
-          },
-          {
-            "name": "h4",
-            "value": "h4"
-          },
-          {
-            "name": "h5",
-            "value": "h5"
-          },
-          {
-            "name": "h6",
-            "value": "h6"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "button",
     "fields": [
       {
@@ -497,6 +456,60 @@
         "name": "classes",
         "label": "Style classes",
         "multi": true
+      }
+    ]
+  },
+  {
+    "id": "icons",
+    "fields": [
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Style classes",
+        "multi": true
+      }
+    ]
+  },
+  {
+    "id": "icon",
+    "fields": [
+      {
+        "component": "text",
+        "name": "classes",
+        "valueType": "string",
+        "hidden": true
+      },
+      {
+        "component": "select",
+        "name": "gridIcon_icon",
+        "value": "",
+        "label": "Icon",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Search",
+            "value": ":search:"
+          },
+          {
+            "name": "Location",
+            "value": ":location:"
+          },
+          {
+            "name": "Magnify",
+            "value": ":magnify:"
+          },
+          {
+            "name": "Wedge",
+            "value": ":wedge:"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "gridIcon_description",
+        "label": "Description",
+        "valueType": "string",
+        "multi": false
       }
     ]
   },
