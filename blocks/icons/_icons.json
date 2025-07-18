@@ -86,7 +86,8 @@
       {
         "id": "icons",
         "components": [
-          "icon"
+          "icon",
+          "text"
         ]
       }
     ]
