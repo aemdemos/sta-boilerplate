@@ -6,7 +6,7 @@
         "plugins": {
           "xwalk": {
             "page": {
-              "resourceType": "core/franklin/components/section/v1/section",
+              "resourceType": "core/franklin/components/block/v1/block",
               "template": {
                 "name": "Library Metadata",
                 "model": "library-metadata"
@@ -23,24 +23,28 @@
           {
             "component": "text",
             "valueType": "string",
+            "key-value": "true",
             "name": "name",
-            "label": "name on left subnav"
+            "label": "name on left subnav + action bar"
           },
           {
             "component": "text",
             "valueType": "string",
+            "key-value": "true",
             "name": "title",
             "label": "Title for bottom action bar"
           },
           {
             "component": "text",
             "valueType": "string",
+            "key-value": "true",
             "name": "description",
             "label": "Description goes nowhere"
           },
           {
             "component": "text",
             "valueType": "string",
+            "key-value": "true",
             "name": "details",
             "label": "Details for bottom"
           }
