@@ -31,8 +31,8 @@
           {
             "component": "text",
             "valueType": "string",
-            "name": "name",
-            "label": "second name for left?"
+            "name": "variant-name",
+            "label": "variant name (not used)"
           },
           {
             "component": "text",
