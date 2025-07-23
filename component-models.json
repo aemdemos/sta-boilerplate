@@ -531,12 +531,6 @@
         "label": "Library Metadata (hidden)"
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "variant-name",
-        "label": "variant name (not used)"
-      },
-      {
         "component": "richtext",
         "valueType": "string",
         "name": "description",
