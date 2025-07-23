@@ -521,14 +521,14 @@
         "component": "text",
         "valueType": "string",
         "key-value": "true",
-        "name": "library_name",
+        "name": "variant-name",
         "label": "name on left subnav + action bar"
       },
       {
         "component": "text",
         "valueType": "string",
         "key-value": "true",
-        "name": "library_description",
+        "name": "description",
         "label": "Description"
       },
       {
@@ -536,7 +536,7 @@
         "valueType": "string",
         "key-value": "true",
         "name": "name",
-        "label": "Original name"
+        "label": "block name"
       },
       {
         "component": "text",
