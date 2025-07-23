@@ -516,32 +516,29 @@
   },
   {
     "id": "library-metadata",
+    "key-value": "true",
     "fields": [
       {
         "component": "text",
         "valueType": "string",
-        "key-value": "true",
         "name": "variant-name",
         "label": "name on left subnav + action bar"
       },
       {
         "component": "text",
         "valueType": "string",
-        "key-value": "true",
         "name": "description",
         "label": "Description"
       },
       {
         "component": "text",
         "valueType": "string",
-        "key-value": "true",
         "name": "name",
         "label": "block name"
       },
       {
         "component": "text",
         "valueType": "string",
-        "key-value": "true",
         "name": "details",
         "label": "Details for bottom maybe"
       }
