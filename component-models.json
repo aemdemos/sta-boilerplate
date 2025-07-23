@@ -516,7 +516,6 @@
   },
   {
     "id": "library-metadata",
-    "key-value": "true",
     "fields": [
       {
         "component": "text",
