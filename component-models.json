@@ -521,13 +521,25 @@
         "component": "text",
         "valueType": "string",
         "name": "name",
-        "label": "name"
+        "label": "name on left subnav"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title for bottom action bar"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "description",
-        "label": "Description"
+        "label": "Description goes nowhere"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "details",
+        "label": "Details for bottom"
       }
     ]
   },
