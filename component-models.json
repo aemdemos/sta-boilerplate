@@ -521,29 +521,29 @@
         "component": "text",
         "valueType": "string",
         "key-value": "true",
-        "name": "name",
+        "name": "library_name",
         "label": "name on left subnav + action bar"
       },
       {
         "component": "text",
         "valueType": "string",
         "key-value": "true",
-        "name": "title",
-        "label": "Title for bottom action bar"
+        "name": "library_description",
+        "label": "Description"
       },
       {
         "component": "text",
         "valueType": "string",
         "key-value": "true",
-        "name": "description",
-        "label": "Description goes nowhere"
+        "name": "name",
+        "label": "Original name"
       },
       {
         "component": "text",
         "valueType": "string",
         "key-value": "true",
         "name": "details",
-        "label": "Details for bottom"
+        "label": "Details for bottom maybe"
       }
     ]
   },
