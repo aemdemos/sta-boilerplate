@@ -24,26 +24,21 @@
           {
             "component": "text",
             "valueType": "string",
-            "name": "variant-name",
-            "label": "name on left subnav + action bar"
+            "hidden": "true",
+            "name": "name",
+            "label": "Library Metadata (hidden)"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "name",
+            "label": "second name for left?"
           },
           {
             "component": "text",
             "valueType": "string",
             "name": "description",
             "label": "Description"
-          },
-          {
-            "component": "text",
-            "valueType": "string",
-            "name": "name",
-            "label": "block name"
-          },
-          {
-            "component": "text",
-            "valueType": "string",
-            "name": "details",
-            "label": "Details for bottom maybe"
           }
         ]
       }
