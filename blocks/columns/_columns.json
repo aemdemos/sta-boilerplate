@@ -33,6 +33,12 @@
           "name": "rows",
           "value": "",
           "label": "Rows"
+        },
+        {
+          "component": "text",
+          "name": "classes",
+          "label": "Style classes",
+          "multi": true
         }
       ]
     }
