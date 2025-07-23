@@ -35,23 +35,10 @@
             "label": "variant name (not used)"
           },
           {
-            "component": "text",
+            "component": "richtext",
             "valueType": "string",
             "name": "description",
             "label": "Description"
-          },
-          {
-            "component": "text",
-            "valueType": "string",
-            "name": "description_hr",
-            "hidden": "true",
-            "value": "<hr>"
-          },
-          {
-            "component": "text",
-            "valueType": "string",
-            "name": "description_url",
-            "label": "Sample URL"
           }
         ]
       }
