@@ -3,8 +3,8 @@ const path = require('path');
 
 const projectType = process.argv[2];
 
-if (!projectType || !['doc', 'xwalk'].includes(projectType)) {
-  console.error('Please specify project type: "doc" or "xwalk"');
+if (!projectType || !['doc', 'xwalk', 'da'].includes(projectType)) {
+  console.error('Please specify project type: "doc" or "xwalk" or "da"');
   process.exit(1);
 }
 
@@ -32,12 +32,19 @@ function copyFile(source, target) {
   }
 }
 
-// Handle xwalk scenario
-if (projectType === 'xwalk') {
-  // Overwrite fstab.yaml with fstab.yaml.xwalk-sample and then delete the original
-  copyFile('fstab.yaml.xwalk-sample', 'fstab.yaml');
-  deleteFile('fstab.yaml.xwalk-sample');
-} else if (projectType === 'doc') {
+/**
+ * Helper to replace fstab.yaml with a given source file, then delete the source
+ * @param {string} source - The source file to replace fstab.yaml with
+ */
+function replaceFstab(source) {
+  copyFile(source, 'fstab.yaml');
+  deleteFile(source);
+}
+
+/**
+ * Clean up xwalk content
+ */
+function cleanUpXwalkContent() {
   // Delete models directory
   deleteDirectory('models');
 
@@ -95,6 +102,19 @@ if (projectType === 'xwalk') {
     fs.writeFileSync(packageJsonPath, `${JSON.stringify(packageJson, null, 2)}\n`);
     console.log('Removed build:json scripts from package.json');
   }
+}
+
+if (projectType === 'da') {
+  // Overwrite fstab.yaml with fstab.yaml.da and then delete the original
+  replaceFstab('fstab.yaml.da-sample');
+  cleanUpXwalkContent();
+} else if (projectType === 'xwalk') { // Handle xwalk scenario
+  // Overwrite fstab.yaml with fstab.yaml.xwalk-sample and then delete the original
+  replaceFstab('fstab.yaml.xwalk-sample');
+  deleteFile('fstab.yaml.da-sample');
+} else if (projectType === 'doc') {
+  deleteFile('fstab.yaml.da-sample');
+  cleanUpXwalkContent();
 }
 
 // Delete this script
