@@ -40,13 +40,13 @@
     ]
   },
   {
-    "id": "new-metadata",
+    "id": "new-template-metadata",
     "fields": [
       {
         "component": "text",
         "name": "template",
         "valueType": "string",
-        "value": "new",
+        "value": "new-template",
         "label": "Page template name"
       },
       {
@@ -70,7 +70,7 @@
       {
         "component": "reference",
         "name": "image",
-        "label": "Image - new template",
+        "label": "Image - new-template",
         "multi": false
       }
     ]
