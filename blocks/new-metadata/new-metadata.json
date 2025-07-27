@@ -1,0 +1,40 @@
+{
+    "models": [
+      {
+        "id": "new-metadata",
+        "fields": [
+          {
+            "component": "text",
+            "name": "template",
+            "valueType": "string",
+            "value": "new",
+            "label": "Page template name"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "jcr:title",
+            "label": "Title"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "pageTitle",
+            "label": "Page Title"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "jcr:description",
+            "label": "Discription"
+          },
+          {
+            "component": "reference",
+            "name": "image",
+            "label": "Image - new template",
+            "multi": false
+          }
+        ]
+      }
+    ]
+}
