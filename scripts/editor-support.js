@@ -51,20 +51,6 @@ function setState(block, state) {
   }
 }
 
-// set the filter for an UE editable
-function setUEFilter(element, filter) {
-  element.dataset.aueFilter = filter;
-}
-
-function updateUEInstrumentation() {
-  const main = document.querySelector('main');
-  const template = document.head.querySelector('[name=template]').getAttribute('content');
-  if (template === 'new') {
-    // use new specific section json
-    setUEFilter(main, 'main-new');
-  }
-}
-
 async function applyChanges(event) {
   // redecorate default content and blocks on patches (in the properties rail)
   const { detail } = event;
@@ -160,14 +146,8 @@ function attachEventListners(main) {
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
     event.stopPropagation();
     const applied = await applyChanges(event);
-    // if (!applied) window.location.reload();
-    if (applied) {
-      updateUEInstrumentation();
-    } else {
-      window.location.reload();
-    }
+    if (!applied) window.location.reload();
   }));
 }
 
 attachEventListners(document.querySelector('main'));
-updateUEInstrumentation();
