@@ -59,9 +59,9 @@ function setUEFilter(element, filter) {
 function updateUEInstrumentation() {
   const main = document.querySelector('main');
   const template = document.head.querySelector('[name=template]').getAttribute('content');
-  if (template === 'marketing') {
-    // use marketing specific section
-    setUEFilter(main, 'main-marketing');
+  if (template === 'new') {
+    // use new specific section json
+    setUEFilter(main, 'main-new');
   }
 }
 
