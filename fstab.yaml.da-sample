@@ -1,4 +1,4 @@
 mountpoints:
   /:
-    url: https://content.da.live/{orgName}/{siteName}/
+    url: https://da.live/#/{orgName}/{siteName}/
     type: markup
