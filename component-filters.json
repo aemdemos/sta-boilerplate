@@ -15,7 +15,11 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "accordion",
+      "tabs",
+      "embed",
+      "quote"
     ]
   },
   {
