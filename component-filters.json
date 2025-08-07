@@ -14,12 +14,16 @@
       "title",
       "hero",
       "cards",
+      "carousel",
       "columns",
       "fragment",
       "accordion",
       "tabs",
       "embed",
-      "quote"
+      "quote",
+      "search",
+      "video",
+      "table"
     ]
   },
   {
