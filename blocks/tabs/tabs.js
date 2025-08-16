@@ -28,9 +28,13 @@ export default async function decorate(block) {
     button.id = `tab-${id}`;
 
     // move instrumentation from tab to tabpanel
-    moveInstrumentation(tab.parentElement, tabpanel.lastElementChild);
-    console.log('tabpanel.lastElementChild', tabpanel.lastElementChild);
-    console.log('tabpanel.lastElement', tabpanel.lastElement);
+    // Get all children of tabpanel and move instrumentation to each
+    const children = [...tabpanel.children];
+    if (children.length > 0) {
+      children.forEach((child) => {
+        moveInstrumentation(tab.parentElement, child);
+      });
+    }
     button.innerHTML = tab.innerHTML;
 
     button.setAttribute('aria-controls', `tabpanel-${id}`);
@@ -49,6 +53,7 @@ export default async function decorate(block) {
     });
     tablist.append(button);
     tab.remove();
+
     moveInstrumentation(button.querySelector('p'), null);
   });
 
