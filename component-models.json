@@ -811,7 +811,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "tab-name",
+        "name": "tabName",
         "value": "",
         "label": "Tab Name"
       },
