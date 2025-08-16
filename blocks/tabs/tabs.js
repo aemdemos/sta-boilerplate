@@ -2,8 +2,12 @@
 import { toClassName } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
+function hasWrapper(el) {
+  return !!el.firstElementChild && window.getComputedStyle(el.firstElementChild).display === 'block';
+}
+
 export default async function decorate(block) {
-  // build tablist
+  // build div with all tab names
   const tablist = document.createElement('div');
   tablist.className = 'tabs-list';
   tablist.setAttribute('role', 'tablist');
@@ -18,14 +22,19 @@ export default async function decorate(block) {
     tabpanel.className = 'tabs-panel';
     tabpanel.id = `tabpanel-${id}`;
     tabpanel.setAttribute('aria-hidden', !!i);
+    // when i is 0, !!i is false, so tabpanel is visible
     tabpanel.setAttribute('aria-labelledby', `tab-${id}`);
     tabpanel.setAttribute('role', 'tabpanel');
+    if (!hasWrapper(tabpanel.lastElementChild)) {
+      tabpanel.lastElementChild.innerHTML = `<p>${tabpanel.lastElementChild.innerHTML}</p>`;
+    }
 
     // build tab button
     const button = document.createElement('button');
     button.className = 'tabs-tab';
     button.id = `tab-${id}`;
 
+    // move instrumentation from tab to tabpanel
     moveInstrumentation(tab.parentElement, tabpanel.lastElementChild);
     button.innerHTML = tab.innerHTML;
 
