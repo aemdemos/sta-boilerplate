@@ -29,6 +29,8 @@ export default async function decorate(block) {
 
     // move instrumentation from tab to tabpanel
     moveInstrumentation(tab.parentElement, tabpanel.lastElementChild);
+    console.log('tabpanel.lastElementChild', tabpanel.lastElementChild);
+    console.log('tabpanel.lastElement', tabpanel.lastElement);
     button.innerHTML = tab.innerHTML;
 
     button.setAttribute('aria-controls', `tabpanel-${id}`);
