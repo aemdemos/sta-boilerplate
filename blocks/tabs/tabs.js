@@ -28,13 +28,8 @@ export default async function decorate(block) {
     button.id = `tab-${id}`;
 
     // move instrumentation from tab to tabpanel
-    // Get all children of tabpanel and move instrumentation to each
-    const children = [...tabpanel.children];
-    if (children.length > 0) {
-      children.forEach((child) => {
-        moveInstrumentation(tab.parentElement, child);
-      });
-    }
+    //   moveInstrumentation(tab.parentElement, tabpanel.lastElementChild);
+
     button.innerHTML = tab.innerHTML;
 
     button.setAttribute('aria-controls', `tabpanel-${id}`);
