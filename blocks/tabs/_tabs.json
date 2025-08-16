@@ -9,7 +9,6 @@
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
               "name": "Tabs",
-              "model": "tabs",
               "filter": "tabs"
             }
           }
@@ -35,17 +34,6 @@
     }
   ],
   "models": [
-    {
-      "id": "tabs",
-      "fields": [
-          {
-            "component": "text",
-            "name": "classes",
-            "label": "Style classes",
-            "multi": true
-            }
-        ]
-      },
     {
       "id": "tabs-item",
       "fields": [
