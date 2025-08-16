@@ -2,10 +2,6 @@
 import { toClassName } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
-function hasWrapper(el) {
-  return !!el.firstElementChild && window.getComputedStyle(el.firstElementChild).display === 'block';
-}
-
 export default async function decorate(block) {
   // build div with all tab names
   const tablist = document.createElement('div');
@@ -25,10 +21,6 @@ export default async function decorate(block) {
     // when i is 0, !!i is false, so tabpanel is visible
     tabpanel.setAttribute('aria-labelledby', `tab-${id}`);
     tabpanel.setAttribute('role', 'tabpanel');
-    if (!hasWrapper(tabpanel.lastElementChild)) {
-      // tabpanel.lastElementChild.innerHTML = `<p>${tabpanel.lastElementChild.innerHTML}</p>`;
-      tabpanel.lastElementChild.innerHTML = '<p>charity last element child</p>';
-    }
 
     // build tab button
     const button = document.createElement('button');
