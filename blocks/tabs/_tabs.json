@@ -52,7 +52,7 @@
         {
           "component": "text",
           "valueType": "string",
-          "name": "tabName",
+          "name": "tab-name",
           "value": "",
           "label": "Tab Name"
         },
