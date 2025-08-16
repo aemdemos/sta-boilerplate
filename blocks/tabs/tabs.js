@@ -27,8 +27,9 @@ export default async function decorate(block) {
     button.className = 'tabs-tab';
     button.id = `tab-${id}`;
 
-    // move instrumentation from tab to tabpanel
-    //   moveInstrumentation(tab.parentElement, tabpanel.lastElementChild);
+    // I don't know why boilerplate moves instrumentation from tab to tabpanel
+    // but it's not needed
+    //  moveInstrumentation(tab.parentElement, tabpanel.lastElementChild);
 
     button.innerHTML = tab.innerHTML;
 
