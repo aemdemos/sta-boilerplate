@@ -26,7 +26,8 @@ export default async function decorate(block) {
     tabpanel.setAttribute('aria-labelledby', `tab-${id}`);
     tabpanel.setAttribute('role', 'tabpanel');
     if (!hasWrapper(tabpanel.lastElementChild)) {
-      tabpanel.lastElementChild.innerHTML = `<p>${tabpanel.lastElementChild.innerHTML}</p>`;
+      // tabpanel.lastElementChild.innerHTML = `<p>${tabpanel.lastElementChild.innerHTML}</p>`;
+      tabpanel.lastElementChild.innerHTML = '<p>charity last element child</p>';
     }
 
     // build tab button
