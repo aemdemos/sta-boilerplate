@@ -795,6 +795,18 @@
     ]
   },
   {
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Style classes",
+        "multi": true
+      }
+    ]
+  },
+  {
     "id": "tabs-item",
     "fields": [
       {
@@ -810,20 +822,6 @@
         "value": "",
         "label": "Content",
         "valueType": "string"
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image_mobile",
-        "label": "Image - Mobile",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "image_mobileAlt",
-        "label": "Alt text for image",
-        "value": ""
       }
     ]
   },
