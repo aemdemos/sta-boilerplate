@@ -48,12 +48,13 @@
         "columns",
         "fragment",
         "accordion",
-        "tabs",
         "embed",
         "quote",
         "search",
+        "table",
         "video",
-        "table"
+        "tab-list",
+        "library-metadata"
       ]
     }
   ]

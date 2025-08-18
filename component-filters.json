@@ -2,7 +2,8 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "tab-panel"
     ]
   },
   {
@@ -18,12 +19,13 @@
       "columns",
       "fragment",
       "accordion",
-      "tabs",
       "embed",
       "quote",
       "search",
+      "table",
       "video",
-      "table"
+      "tab-list",
+      "library-metadata"
     ]
   },
   {
@@ -91,6 +93,10 @@
   },
   {
     "id": "video",
+    "components": []
+  },
+  {
+    "id": "library-metadata",
     "components": []
   }
 ]

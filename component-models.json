@@ -302,6 +302,22 @@
     ]
   },
   {
+    "id": "form",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Form"
+      },
+      {
+        "component": "text",
+        "name": "action",
+        "label": "Action URL",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
@@ -637,6 +653,56 @@
         "name": "placeholder_imageAlt",
         "value": "",
         "label": "Placeholder Image Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "library-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "blockName",
+        "label": "Block Name"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "description",
+        "label": "Description of the block variant"
+      }
+    ]
+  },
+  {
+    "id": "tab-panel",
+    "fields": [
+      {
+        "component": "text",
+        "name": "tab-label",
+        "label": "Label"
+      },
+      {
+        "component": "text",
+        "name": "name",
+        "label": "Section Name",
+        "description": "The label shown for this section in the Content Tree"
+      },
+      {
+        "component": "text",
+        "name": "style",
+        "label": "Style",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "tab-list",
+    "fields": [
+      {
+        "component": "boolean",
+        "name": "classes_showAll",
+        "label": "Show All?",
+        "description": "When enabled, the tab list will prepend a show all button."
       }
     ]
   }
