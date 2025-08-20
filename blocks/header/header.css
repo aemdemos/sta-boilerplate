@@ -268,3 +268,39 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+/* containers */
+header .nav-top-container,
+header .nav-bottom-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 1248px;
+  min-height: calc(var(--nav-height) / 4);
+  padding: 0 24px;
+  background-color: var(--background-color);
+  font-size: var(--body-font-size-xs);
+}
+
+header .nav-top-container {
+  border-bottom: 1px solid var(--light-color);
+}
+
+header .nav-bottom-container {
+  border-top: 1px solid var(--light-color);
+}
+
+header .nav-top-container:empty,
+header .nav-bottom-container:empty {
+  display: none;
+}
+
+@media (width >= 900px) {
+  header .nav-top-container,
+  header .nav-bottom-container {
+    max-width: 1264px;
+    padding: 0 32px;
+  }
+}
