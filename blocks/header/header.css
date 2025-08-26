@@ -4,6 +4,9 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  height: var(--nav-height);
+  display: flex;
+  flex-direction: column;
 }
 
 header nav {
@@ -16,7 +19,7 @@ header nav {
   gap: 0 24px;
   margin: auto;
   max-width: 1248px;
-  height: var(--nav-height);
+  flex: 1;
   padding: 0 24px;
   font-family: var(--body-font-family);
 }
@@ -278,7 +281,7 @@ header .nav-bottom-container {
   align-items: center;
   margin: auto;
   max-width: 1248px;
-  min-height: calc(var(--nav-height) / 4);
+  flex: 0 0 auto;
   padding: 0 24px;
   background-color: var(--background-color);
   font-size: var(--body-font-size-xs);
