@@ -1,4 +1,3 @@
-
 /*
  * Copyright 2025 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -35,6 +34,16 @@ export const customParsers = {};
 export const customElements = [];
 
 /**
- * Custom transformers
+ * An array of transformer functions.
+ *
+ * eg.
+ * [
+ *   (hookName, element, payload) => {
+ *     // transform the element
+ *   },
+ * ]
+ *
+ * The hookName is the name of the hook that the transformer is being applied to.
+ *   (eg. 'beforeTransform', 'beforeParse', 'afterParse', 'afterTransform')
  */
-export const customTransformers = {};
+export const customTransformers = [];
