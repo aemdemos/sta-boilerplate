@@ -1,14 +1,14 @@
 {
   "mappings": [
-    "/content/sta-boilerplate/:/",
-    "/content/sta-boilerplate/configuration:/.helix/config.json",
-    "/content/sta-boilerplate/metadata:/metadata.json",
-    "/content/sta-boilerplate/taxonomy:/taxonomy.json",
-    "/content/sta-boilerplate/library/blocks:/library/blocks.json",
-    "/content/dam/sta-boilerplate/icons/:/icons/"
+    "/content/aem-sites-with-edge-delivery-services-template/:/",
+    "/content/aem-sites-with-edge-delivery-services-template/configuration:/.helix/config.json",
+    "/content/aem-sites-with-edge-delivery-services-template/metadata:/metadata.json",
+    "/content/aem-sites-with-edge-delivery-services-template/taxonomy:/taxonomy.json",
+    "/content/aem-sites-with-edge-delivery-services-template/library/blocks:/library/blocks.json",
+    "/content/dam/aem-sites-with-edge-delivery-services-template/icons/:/icons/"
   ],
   "includes": [
-    "/content/sta-boilerplate/",
-    "/content/dam/sta-boilerplate/"
+    "/content/aem-sites-with-edge-delivery-services-template/",
+    "/content/dam/aem-sites-with-edge-delivery-services-template/"
   ]
 }
