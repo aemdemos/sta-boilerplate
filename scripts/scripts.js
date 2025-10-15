@@ -156,8 +156,25 @@ export const NX_ORIGIN = branch === 'local' || origin.includes('localhost') ? 'h
 (async function loadDa() {
   /* eslint-disable import/no-unresolved */
   if (searchParams.get('dapreview')) {
-    import('https://da.live/scripts/dapreview.js')
-      .then(({ default: daPreview }) => daPreview(loadPage));
+    await import('https://da.live/scripts/dapreview.js').then(async ({ default: daPreview }) => {
+      await daPreview(loadPage);
+      // add class to body to be used for restricting vh metric
+      document.body.classList.add('da-live-preview');
+
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.type === 'childList') {
+            // Check if body was replaced and apply class to new body
+            const currentBody = document.body;
+            if (currentBody && !currentBody.classList.contains('da-live-preview')) {
+              // apply class to body if it's not already there
+              currentBody.classList.add('da-live-preview');
+            }
+          }
+        });
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: false });
+    });
   }
   if (searchParams.get('daexperiment')) {
     import(`${NX_ORIGIN}/public/plugins/exp/exp.js`);
