@@ -1,5 +1,5 @@
 # Your Project's Title...
-Your project's description...
+Your project's description... based on the sta-boilerplate.
 
 ## Environments
 - Preview: https://main--{repo}--{owner}.aem.page/
