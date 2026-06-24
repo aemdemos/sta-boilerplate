@@ -2,7 +2,8 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "tab-panel"
     ]
   },
   {
@@ -10,5 +11,8 @@
   },
   {
     "...": "../blocks/*/_*.json#/filters"
+  },
+  {
+    "...": "../blocks-xwalk/*/_*.json#/filters"
   }
 ]

@@ -19,5 +19,8 @@
   },
   {
     "...": "../blocks/*/_*.json#/models"
+  },
+  {
+    "...": "../blocks-xwalk/*/_*.json#/models"
   }
 ]
