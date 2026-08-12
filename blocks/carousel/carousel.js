@@ -1,5 +1,4 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
-import { moveInstrumentation } from '../../scripts/scripts.js';
 
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel');
@@ -21,10 +20,13 @@ function updateActiveSlide(slide) {
 
   const indicators = block.querySelectorAll('.carousel-slide-indicator');
   indicators.forEach((indicator, idx) => {
+    const button = indicator.querySelector('button');
     if (idx !== slideIndex) {
-      indicator.querySelector('button').removeAttribute('disabled');
+      button.removeAttribute('disabled');
+      button.removeAttribute('aria-current');
     } else {
-      indicator.querySelector('button').setAttribute('disabled', 'true');
+      button.setAttribute('disabled', true);
+      button.setAttribute('aria-current', true);
     }
   });
 }
@@ -130,7 +132,6 @@ export default async function decorate(block) {
 
   rows.forEach((row, idx) => {
     const slide = createSlide(row, idx, carouselId);
-    moveInstrumentation(row, slide);
     slidesWrapper.append(slide);
 
     if (slideIndicators) {

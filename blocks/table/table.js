@@ -4,8 +4,6 @@
  * https://www.hlx.live/developer/block-collection/table
  */
 
-import { moveInstrumentation } from '../../scripts/scripts.js';
-
 /**
  *
  * @param {Element} block
@@ -18,7 +16,6 @@ export default async function decorate(block) {
 
   [...block.children].forEach((row, i) => {
     const tr = document.createElement('tr');
-    moveInstrumentation(row, tr);
 
     [...row.children].forEach((cell) => {
       const td = document.createElement(i === 0 && header ? 'th' : 'td');
